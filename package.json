@@ -1,0 +1,20 @@
+{
+  "name": "tubes",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/channelsuurf/tubes.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "backpack",
+    "test": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "backpack-core": "^0.7.0"
+  }
+}
