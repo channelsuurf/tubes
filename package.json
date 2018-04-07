@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "backpack",
     "build": "backpack build",
-    "start": "npm run build && node ./build/main.js",
+    "start": "NODE_ENV=production npm run build && node ./build/main.js",
     "test": "NODE_ENV=test nyc mocha tests/**/*.js"
   },
   "dependencies": {
