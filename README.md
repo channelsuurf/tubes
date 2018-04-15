@@ -6,7 +6,7 @@ Tubes is an online video API proxy service. It is a standalone service that allo
 
 Given a video URL, tubes will attempt to parse and match it to a known provider and then fetch its metadata.
 
-It supports both 3rd party API and [oEmbed](https://oembed.com/) providers
+It supports both 3rd party API and [oEmbed](https://oembed.com/) providers.
 
 ### Supported Providers
 
@@ -34,7 +34,15 @@ Coming Soon.
 
 #### Deployment
 
-Coming Soon.
+Tubes is intended to be used as an internal service, run under a private network. No attempt is made to prevent malicious actors from using up your API quotas. Additionally, some API terms may forbid or limit public indirect access to their API.
+
+`npm start` will build and run the production server. You can set the port the service runs on with the `PORT` environment variable:
+
+```
+PORT=8080 npm start
+```
+
+A `Dockerfile` is also provided for use in a container environment.
 
 ### Development
 
