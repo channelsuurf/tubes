@@ -39,7 +39,7 @@ const matchesAny = (url) => {
     .catch(Promise.AggregateError, () => undefined) // Returns 'undefined' if no URLs match
 }
 
-export const parseUrl = (url, decode = false) => {
+export const parseURL = (url, decode = false) => {
   const decodedUrl = (decode ? decodeURI(url) : url)
   return matchesAny(decodedUrl)
 }
